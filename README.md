@@ -1,70 +1,180 @@
-# Getting Started with Create React App
+Berikut adalah dokumentasi dalam bahasa Indonesia yang mencakup semua langkah yang diperlukan untuk memulai, menjalankan, dan mendeply proyek Anda menggunakan Create React App:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WakandaTalk.com
 
-## Available Scripts
+WakandaTalk.com adalah aplikasi web berita yang memberikan informasi terbaru dan terpercaya. Aplikasi ini dibangun menggunakan React.
 
-In the project directory, you can run:
+## Fitur
+
+- **Tampilan Berita Utama**: Menampilkan daftar berita utama dari berbagai sumber.
+- **Halaman Tentang Kami**: Memberikan informasi tentang tim dan misi WakandaTalk.com.
+- **Halaman Kontak**: Menyediakan informasi kontak dan peta lokasi kantor (menggunakan placeholder peta).
+- **Daftar Berita Favorit**: Pengguna dapat menandai berita sebagai favorit.
+
+## Prasyarat
+
+Sebelum menginstal, pastikan Anda memiliki:
+
+- Node.js dan npm (Node Package Manager) terinstal di mesin Anda.
+- Akun GitHub.
+- Akun Vercel atau Netlify untuk deployment (opsional).
+
+## Instalasi
+
+1. **Clone repositori ini:**
+
+   ```bash
+   git clone https://github.com/<username>/<repository-name>.git
+   ```
+
+2. **Masuk ke direktori proyek:**
+
+   ```bash
+   cd <repository-name>
+   ```
+
+3. **Instal dependensi:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Jalankan aplikasi:**
+   ```bash
+   npm start
+   ```
+   Aplikasi akan berjalan di `http://localhost:3000`.
+
+## Skrip yang Tersedia
+
+Di direktori proyek, Anda dapat menjalankan:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Menjalankan aplikasi dalam mode pengembangan.\
+Buka [http://localhost:3000](http://localhost:3000) untuk melihatnya di browser Anda.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Halaman akan memuat ulang saat Anda melakukan perubahan.\
+Anda mungkin juga akan melihat kesalahan di konsol.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Menjalankan test runner dalam mode interaktif.\
+Lihat bagian tentang [menjalankan tes](https://facebook.github.io/create-react-app/docs/running-tests) untuk informasi lebih lanjut.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Membangun aplikasi untuk produksi ke dalam folder `build`.\
+Ini menggabungkan React dalam mode produksi dan mengoptimalkan build untuk kinerja terbaik.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Build diminifikasi dan nama file menyertakan hash.\
+Aplikasi Anda siap untuk di-deploy!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Lihat bagian tentang [deployment](https://facebook.github.io/create-react-app/docs/deployment) untuk informasi lebih lanjut.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Catatan: Ini adalah operasi satu arah. Setelah Anda `eject`, Anda tidak bisa kembali!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Jika Anda tidak puas dengan alat build dan pilihan konfigurasi, Anda dapat melakukan `eject` kapan saja. Perintah ini akan menghapus ketergantungan build tunggal dari proyek Anda.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Sebaliknya, itu akan menyalin semua file konfigurasi dan ketergantungan transitif (webpack, Babel, ESLint, dll) langsung ke proyek Anda sehingga Anda memiliki kendali penuh atas mereka. Semua perintah kecuali `eject` masih akan berfungsi, tetapi mereka akan mengarah ke skrip yang disalin sehingga Anda dapat menyesuaikannya. Pada titik ini Anda sendiri.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Anda tidak harus menggunakan `eject`. Set fitur yang dikuratori ini cocok untuk deployment kecil dan menengah, dan Anda tidak perlu merasa harus menggunakan fitur ini. Namun kami memahami bahwa alat ini tidak akan berguna jika Anda tidak dapat menyesuaikannya saat Anda siap melakukannya.
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Deployment ke Vercel
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Buat akun di Vercel:**
 
-### Code Splitting
+   - Buka [Vercel](https://vercel.com/) dan login atau buat akun baru.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Hubungkan repositori GitHub ke Vercel:**
 
-### Analyzing the Bundle Size
+   - Klik "New Project" di dashboard Vercel.
+   - Pilih GitHub sebagai sumber.
+   - Pilih repositori yang ingin Anda deploy.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Konfigurasi proyek di Vercel:**
 
-### Making a Progressive Web App
+   - Vercel akan secara otomatis mendeteksi bahwa ini adalah proyek React.
+   - Gunakan konfigurasi berikut:
+     - **Framework Preset:** React
+     - **Build Command:** `npm run build`
+     - **Output Directory:** `build`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Deploy proyek:**
 
-### Advanced Configuration
+   - Klik "Deploy".
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. **Verifikasi domain:**
+   - Setelah deployment berhasil, Anda akan diberikan URL unik untuk proyek Anda.
+   - Anda bisa mengkonfigurasi domain khusus melalui dashboard Vercel jika diperlukan.
 
-### Deployment
+### Alternatif Deployment: Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Buat akun di Netlify:**
 
-### `npm run build` fails to minify
+   - Buka [Netlify](https://www.netlify.com/) dan login atau buat akun baru.
+   - Klik "New site from Git".
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Hubungkan repositori GitHub ke Netlify:**
+
+   - Pilih GitHub sebagai sumber.
+   - Izinkan Netlify mengakses repositori GitHub Anda.
+   - Pilih repositori yang ingin Anda deploy.
+
+3. **Konfigurasi build di Netlify:**
+
+   - **Build Command:** `npm run build`
+   - **Publish Directory:** `build`
+
+4. **Deploy proyek:**
+
+   - Klik "Deploy site".
+
+5. **Verifikasi domain:**
+   - Setelah deployment berhasil, Anda akan diberikan URL unik untuk proyek Anda.
+   - Anda bisa mengkonfigurasi domain khusus melalui dashboard Netlify jika diperlukan.
+
+## Struktur Proyek
+
+```
+.
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── components
+│   │   ├── About.js
+│   │   ├── Contact.js
+│   │   ├── Favorites.js
+│   │   ├── Header.js
+│   │   ├── Home.js
+│   │   ├── Login.js
+│   │   ├── NewsItem.js
+│   │   ├── NewsList.js
+│   │   └── SearchBar.js
+│   ├── actions
+│   │   ├── newsActions.js
+│   ├── reducers
+│   │   ├── index.js
+│   │   ├── newsReducer.js
+│   ├── store.js
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+```
