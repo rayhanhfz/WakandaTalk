@@ -11,3 +11,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* General styles for the search bar */
+.search-bar {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.search-button {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.search-bar .input-group {
+  display: flex;
+}
+
+.search-bar .input-group-append {
+  display: flex;
+  align-items: center;
+}
+
+.input-group .form-control:focus {
+  box-shadow: none;
+}
+
+.text-danger {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling for hover and focus states */
+.search-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+.search-button:hover {
+  background-color: #004999;
+  border-color: #004999;
+}
+
+.search-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
